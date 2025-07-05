@@ -587,8 +587,8 @@ footer {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-icon:focus,
-.input-icon:hover  {
+.input-column:focus + .input-icon,
+.input-column:hover + .input-icon {
 fill: #4D5AE5;
 }
  
@@ -635,7 +635,7 @@ fill: #4D5AE5;
   text-decoration: underline;
   color: #4d5ae5;
 }
-.privacy-label {
+.privacy-label { 
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -663,7 +663,7 @@ fill: #4D5AE5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-input [type=checkbox]:checked + .checkbox-item {
+input [type=checkbox]:checked + .privacy-label .checkbox-item {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
